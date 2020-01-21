@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/validar.js"></script>
+    <title>Registro del Trabajador</title>
+</head>
+<body>
+    <main>
+        <section id="registro">
+            <form action="POST" action="" class="form-registro" onsubmit="return validar()">
+            <h2 class="efecto-espejo">Registro del trabajador</h2>
+            <div class="contenedor-inputs">
+                <span  class="icon-user"></span>
+                <h5>Nombre:</h5>
+                <input type="text" id="nombre" placeholder="Nombre" class="inputs-100">
+                <h5>Apellidos:</h5>
+                <span  class="icon-user" style="margin-top: 10px"></span>
+                <input type="text" id="apellidos" placeholder="Apellidos" class="inputs-100">
+                <h5>Usuario:</h5>
+                <span class="icon-users"></span>
+                <input type="text" id="usuario" placeholder="Usuario" class="inputs-100">
+                <h5>Clave:</h5>
+                <span class="icon-key"></span>
+                <input type="text" id="clave" placeholder="Contraseña" class="inputs-100">
+                <h5>Correo:</h5>
+                <span class="icon-mail" ></span>
+                <input type="text" id="correo" placeholder="Correo Electronico" class="inputs-100">
+            </div>
+            <div class="cselect">
+            <h5> Seleccione su Titulación:</h5>
+            <select  class="inputs-s" name="titu">
+                    <option value="0">Seleccione Uno …</option>
+                    <option value="secu">Secundaria</option>
+                    <option value="bachi">Bachillerato</option>
+                    <option value="fp">F. Profesional</option>
+                    <option value="lice">Licenciatura</option>
+                    <option value="inge">Ingeniero</option>
+            </select>
+            </div>
+            <div class="cselect">
+            <h5>Seleccione un Lenguaje de Programación:</h5>
+            <select class="inputs-s" name="lengua">
+                    <option value="0">Seleccione Uno …</option>
+                    <option value="php">PHP</option>
+                    <option value="pyth">PYTHON</option>
+                    <option value="java">JAVA</option>
+                    <option value="js">JAVASCRIPT</option>
+                    <option value="angu">ANGULAR</option>
+            </select>
+            </div>
+            <div class="cselect">
+                    <h5>Nivel de Experiencia en Informática:</h5>
+                <table>
+                    
+                    <tr>
+                        <td>Principiante: </td><td><input type="radio" name="nivel" id="princi" value="princi" ></td>
+                    </tr>
+                    <tr>
+                        <td>Intermedio: </td><td><input type="radio" name="nivel" id="inter" value="inter"></td>
+                    </tr>
+                    <tr>
+                        <td>Avanzado: </td><td><input type="radio" name="nivel" id="avan" value="avan" ></td>
+                    </tr>
+                </table>
+                </div>
+                <input type="submit" value="Enviar" class="btn-send">
+                
+            
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

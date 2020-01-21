@@ -1,0 +1,2 @@
+	# cat=basic ; type=string; label=Images Storage folder : Write here the path where JPGRAPH library will generate images. // Dossier de stockage des images : Saisissez ici le chemin du dossier où la librairie JPGRAPH génèrera ses images.   
+outputFolder = fileadmin/jpgraph_storage/

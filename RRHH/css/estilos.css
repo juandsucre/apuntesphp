@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #101111;
+}
+h1{
+    color: #fff;
+    text-align: left;
+}
+.form-registro{
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: rgb(12,1,1);
+    border: 4 px solid crimson;
+    box-shadow: 0 0 20px #4f9;
+    padding-top: auto;
+    margin-top: 80px;
+    display: table;
+}
+span{
+    font-size: 1.5em;
+    color: red;
+}
+.contenedor-inputs
+{
+    padding: 10px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+input{
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid deepskyblue;
+    padding-left:45px;
+
+}
+.inputs-100{
+    width: 100%;
+
+}
+.inputs-80{
+    width: 60%;
+}
+input:focus{
+    background-color: rgba(149,248,164);
+    border: 3px solid #000;
+}
+.btn-send{
+    background: crimson;
+    color: white;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%;
+}
+.btn-send:active{
+    transform:scale(1.2);
+}
+.radio{
+    color: white;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    background: teal;
+
+}
+h2{
+    margin: 10px 0;
+    margin-bottom: 15px;
+    text-align: center;
+    color: crimson;
+    font-family: 'Robotobo', sans-serif;
+    font-size: 50px;
+}
+
+.icon-user{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+
+}
+.icon-mail
+{
+    position: absolute;
+    margin-top: 152px;
+    z-index: 20;
+    margin-left: 5px;
+}
+.icon-users{
+    position: absolute;
+    margin-top: 225px;
+    z-index: 20;
+    margin-left: 5px;
+}
+.icon-key
+{
+    position: absolute;
+    margin-top: 295px;
+    z-index: 20;
+    margin-left: 5px;
+}
+.icon-phone
+{
+    position: absolute;
+    margin-top: 365px;
+    z-index: 20;
+    margin-left: 5px;
+
+}

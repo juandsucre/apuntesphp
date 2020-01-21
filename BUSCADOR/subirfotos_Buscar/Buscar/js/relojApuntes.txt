@@ -1,0 +1,64 @@
+//creamos una función relojDigital
+
+function relojDigital(){
+/*declaramos una variable para almacenar la función Date()*/
+	var Tiempo = new Date();
+	var Minutos = Tiempo.getMinutes();
+	var Segundos = Tiempo.getSeconds();
+	var Hora = Tiempo.getHours();
+/*crearemos una variable para la extración de la hora en dos partes: AM y PM*/
+	var ExtHora;
+	var HoraCompleta;//para unir todas las partes de una hora
+	if(Minutos < 10){
+		Minutos = "0" + Minutos//añade un digito 0
+		
+	} else{
+		Minutos = ""+Minutos;
+		
+	}
+	if(Segundos < 10){
+		Segundos = "0" + Segundos//añade un digito 0
+		
+	} else{
+		Segundos = ""+Segundos;
+		
+	}
+	//Dividmos extHora en AM Y PM
+	if(Hora <12){
+		ExtHora = "AM";
+	}else{
+		ExtHora = "PM";
+	}
+	//Evaluamos la hora para dividirla en 12 y 12 pq la función la trae en 24
+	if(Hora > 12){
+		Hora -= 12;//estoy restando 12
+	} else{
+		Hora = Hora;
+	}
+	if(Hora ==0){
+		
+		Hora = 12;
+	}else{
+		Hora = Hora;
+	}
+	HoraCompleta = Hora + ":" + Minutos + ":" + Segundos + ":" + ""+ExtHora;
+	$("#reloj").html(HoraCompleta);//el metodo html se refiere al contenido html
+}
+//toca automatizar el reloj, utiliz función setInterval()
+$(document).ready(function(){
+	setInterval(relojDigital, 1000);
+	//lla a la función ya creada cada segundo
+	
+	
+});
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+}

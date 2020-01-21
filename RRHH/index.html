@@ -1,0 +1,122 @@
+<!DOCTYPE>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/validar.js"></script>
+    <style>
+    .contenedor-inputs label{
+        color:aqua;
+        font-size: 1.5em;
+        }
+        select{
+            margin-bottom: 15px;
+            padding: 15px;
+            font-size: 20px;
+            border: 1px solid deepskyblue;
+            width: 100%;
+        }
+        .icon-user{
+            position: absolute;
+            margin-top: 42px;
+            margin-left: 5px;
+
+        }
+        .icon-user-add{
+            position: absolute;
+            margin-top: 140px;
+            margin-left: 5px;
+        }
+        .icon-mail
+        {
+            position: absolute;
+            margin-top: 240px;
+            z-index: 20;
+            margin-left: 5px;
+        }
+        .icon-users{
+            position: absolute;
+            margin-top: 340px;
+            z-index: 20;
+            margin-left: 5px;
+        }
+        .icon-key{
+            position: absolute;
+            margin-top: 440px;
+            z-index: 20;
+            margin-left: 5px;
+        }
+        table td{
+            padding: 15px;
+        }
+        table{
+            font-size: 1.5em;
+            text-align: center;
+        }
+    </style>
+    <title>Menu Responsive</title>
+</head>
+    <body>
+        <main>
+            <section id="registro">
+                <form method="post" action="registrate.php" class="form-registro" onsubmit="return validar()">
+                    <h2 class="efecto-espejo">REGISTRARSE</h2>
+                    <div class="contenedor-inputs">
+                        <label>Nombre:</label>
+                        <span class="icon-user"></span>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputs-100">
+                        <label>Apellidos:</label>
+                        <span class="icon-user-add"></span>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputs-100">
+                        <label>Correo:</label>
+                        <span class="icon-mail"></span>
+                        <input type="text" id="correo" name="correo" placeholder="Correo" class="inputs-100">
+                        <label>Usuario:</label>
+                        <span class="icon-users"></span>
+                        <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="inputs-100">
+                        <label>Contraseña:</label>
+                        <span class="icon-key"></span>
+                        <input type="password" id="clave" name="clave" placeholder="Contraseña" class="inputs-100">
+                        <label class="selects">Titulación</label>
+                        <span class="icon-doc"></span>
+                         <select name="Formacion" id="Formacion">
+                              <option value="0">Seleccione uno...</option>
+                          <option value="Secundaria">Secundaria</option>
+                          <option value="Bachillerato">Bachillerato</option>
+                          <option value="F.Profesional">F.Profesional</option>
+                          <option value="Licenciatura">Licenciatura</option>
+                          <option value="Ingeniero">Ingeniero</option>
+                        </select>
+                        <label>Seleccione un lenguaje de programación</label> 
+                        <span class="icon-terminal"></span>
+                         <select name="Lenguaje" id="Lenguaje">
+                             <option value="0">Seleccione uno...</option>
+                          <option value="PHP">PHP</option>
+                          <option value="PHYTON">PHYTON</option>
+                          <option value="JAVA">JAVA</option>
+                          <option value="JAVASCRIPT">JAVASCRIPT</option>
+                          <option value="ANGULAR">ANGULAR</option>
+                        </select> 
+                    </div>
+                    <div class="radio">
+                        <table>
+                        <caption>Nivel de Experiencia en Informática</caption>
+                            <tr>
+                            <td>Principiante:</td><td><input type="radio" name="nivel" id="Principiante" value="Principiante" class="inputs-40"></td>
+                            </tr>
+                            <tr>
+                            <td>Intermedio:</td><td><input type="radio" name="nivel" id="Intermedio" value="Intermedio" class="inputs-40"></td>
+                            </tr>
+                            <tr>
+                            <td>Avanzado:</td><td><input type="radio" name="nivel" id="Avanzado" value="Avanzado" class="inputs-40"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <input class="btn-send" type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
